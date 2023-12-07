@@ -16,7 +16,7 @@ public class Demonstracao {
 
     @BeforeAll
     static void setup(){
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().clearDriverCache().setup();
     }
 
     @BeforeEach

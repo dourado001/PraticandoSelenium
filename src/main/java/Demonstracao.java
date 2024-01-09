@@ -32,6 +32,7 @@ public class Demonstracao {
         chromeDriver.findElement(By.id("nav-search-submit-button")).click();
         String resultado = chromeDriver.findElement(By.xpath("//div[@id='search']//h1//span[contains(.,'resultados')]/..")).getText();
         assertThat(resultado, containsString("Jordan"));
+        //comentario de teste
     }
 
     @AfterEach
